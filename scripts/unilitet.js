@@ -11,6 +11,10 @@ function setbackgroundcolorbyid(elementid) {
   const element = document.getElementById(elementid);
   element.classList.add("bg-orange-400");
 }
+function removebackgroundcolorbyid(elementid) {
+  const element = document.getElementById(elementid);
+  element.classList.remove("bg-orange-400");
+}
 /////
 /////////////////////////////////////
 function rendomAlphabet() {
