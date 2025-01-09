@@ -15,7 +15,29 @@ function removebackgroundcolorbyid(elementid) {
   const element = document.getElementById(elementid);
   element.classList.remove("bg-orange-400");
 }
-/////
+//////////////////////////////////////////////////////////////
+
+/// Score function make///
+
+function scoreElimentById(elementid) {
+  const score = document.getElementById(elementid);
+  const scoreText = score.innerText;
+  const scoreTextChange = parseInt(scoreText);
+  return scoreTextChange;
+}
+
+function setScorById(elementid, value) {
+  const element = document.getElementById(elementid);
+  element.innerText = value;
+}
+
+function getElementTextById(elementid) {
+  const element = document.getElementById(elementid);
+  const text = element.innerText;
+  return text;
+}
+////////////////////////////////////////////////
+
 /////////////////////////////////////
 function rendomAlphabet() {
   const alphabet = "abcdefghijklmnopqrstuvwxyz";
